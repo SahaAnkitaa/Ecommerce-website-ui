@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>e-commerce website</title>
+    <title>Contact Us | E-commerce Website</title>
 
-    <!-- font-awesome cdn link -->
+    <!-- Font Awesome CDN link -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
-    <!-- custom css file link -->
+    <!-- Custom CSS file link -->
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
+    <!-- Header Section -->
     <section id="header">
-        <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
+        <a href="#"><img src="images/logo.png" class="logo" alt="Logo"></a>
         <div>
             <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
@@ -36,34 +36,36 @@
         </div>
     </section>
 
+    <!-- Page Header Section -->
     <section id="page-header" class="about-header">
         <h2>#let's_talk</h2>
-        <p>LEAVE A MESSAGE, We love to hear from you!</p>
+        <p>Leave a message, we'd love to hear from you!</p>
     </section>
 
+    <!-- Contact Details Section -->
     <section id="contact-details" class="section-p1">
         <div class="details">
             <span>GET IN TOUCH</span>
             <h2>Visit one of our agency locations or contact us today.</h2>
             <h3>Head Office</h3>
-            <div>
+            <ul>
                 <li>
                     <i class="fas fa-map"></i>
                     <p>Lahore, Pakistan 54840</p>
                 </li>
                 <li>
                     <i class="fas fa-envelope"></i>
-                    <p>connectwithmawais@gmail.com</p>
+                    <p><a href="mailto:connectwithmawais@gmail.com">connectwithmawais@gmail.com</a></p>
                 </li>
                 <li>
                     <i class="fas fa-phone-alt"></i>
-                    <p>+92-321-4655990
+                    <p><a href="tel:+923214655990">+92-321-4655990</a></p>
                 </li>
                 <li>
                     <i class="fas fa-clock"></i>
-                    <p>Monday to Saturday: 9:00 AM to 16:00 PM</p>
+                    <p>Monday to Saturday: 9:00 AM to 4:00 PM</p>
                 </li>
-            </div>
+            </ul>
         </div>
         <div class="map">
             <iframe
@@ -73,46 +75,49 @@
         </div>
     </section>
 
+    <!-- Contact Form Section -->
     <section id="form-details">
-        <form action="">
+        <form action="your-form-handling-url" method="POST">
             <span>LEAVE A MESSAGE</span>
             <h2>We love to hear from you</h2>
-            <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="E-mail">
-            <input type="text" placeholder="Subject">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <button class="normal">Submit</button>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <button type="submit" class="normal">Submit</button>
         </form>
         <div class="people">
             <div>
-                <img src="images/people/1.png" alt="">
+                <img src="images/people/1.png" alt="John Doe">
                 <p><span>John Doe</span> Senior Marketing Manager<br>Phone: +000 123 000 77 88<br>Email: contact@example.com</p>
             </div>
             <div>
-                <img src="images/people/2.png" alt="">
+                <img src="images/people/2.png" alt="William Smith">
                 <p><span>William Smith</span> Senior Marketing Manager<br>Phone: +000 123 000 77 88<br>Email: contact@example.com</p>
             </div>
             <div>
-                <img src="images/people/3.png" alt="">
+                <img src="images/people/3.png" alt="Emma Stone">
                 <p><span>Emma Stone</span> Senior Marketing Manager<br>Phone: +000 123 000 77 88<br>Email: contact@example.com</p>
             </div>
         </div>
     </section>
 
+    <!-- Newsletter Section -->
     <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">
             <h4>Sign Up For Newsletter</h4>
-            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+            <p>Get email updates about our latest shop news and <span>special offers</span>.</p>
         </div>
         <div class="form">
-            <input type="text" placeholder="Your email address">
+            <input type="email" placeholder="Your email address" required>
             <button class="normal">Sign Up</button>
         </div>
     </section>
 
+    <!-- Footer Section -->
     <footer class="section-p1">
         <div class="col">
-            <img class="logo" src="images/logo.png" alt="">
+            <img class="logo" src="images/logo.png" alt="Logo">
             <h4>Contact</h4>
             <p><strong>Address:</strong> Lahore, Pakistan - 54840</p>
             <p><strong>Phone:</strong> +92-321-4655990</p>
@@ -120,11 +125,11 @@
             <div class="follow">
                 <h4>Follow us</h4>
                 <div class="icon">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-pinterest-p"></i>
-                    <i class="fab fa-youtube"></i>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </div>
@@ -148,18 +153,18 @@
             <h4>Install App</h4>
             <p>From App Store or Google Play</p>
             <div class="row">
-                <img src="images/pay/app.jpg" alt="">
-                <img src="images/pay/play.jpg" alt="">
+                <img src="images/pay/app.jpg" alt="App Store">
+                <img src="images/pay/play.jpg" alt="Google Play">
             </div>
             <p>Secured Payment Gateway</p>
-            <img src="images/pay/pay.png" alt="">
+            <img src="images/pay/pay.png" alt="Payment Gateway">
         </div>
         <div class="copyright">
             <p>Created By Muhammad Awais | All Rights Reserved | &#169; 2023</p>
         </div>
     </footer>
 
-    <!-- javascript script file link -->
+    <!-- JavaScript Script file link -->
     <script src="script.js"></script>
 </body>
 
